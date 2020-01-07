@@ -5,13 +5,9 @@ import {connect} from "react-redux";
 
 class Calculator extends Component {
 	render() {
-		let bgColor = '#c62828';
-		if (!this.props.isLocked) {
-			bgColor = '#2e7d32';
-		}
 		return (
 			<div className="container">
-				<h5>{this.props.isLocked ? 'Access Denied' : 'Access Granted'}</h5>
+				<h5 className={this.props.isLocked ? 'alert-danger' : 'alert-success'}>{this.props.isLocked ? 'Access Denied' : 'Access Granted'}</h5>
 				<input className="calc-display" type="password" value={this.props.code} disabled />
 				<div className="buttons-block">
 					<div className='calculator-inputs-row'>
