@@ -2,3 +2,8 @@
     text-align: center;
     margin: 10%;
 }
+.calc-display{
+    width: 150px;
+    height: 50px;
+    font-size: 25px;
+}
