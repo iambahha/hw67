@@ -47,7 +47,7 @@ const mapDispatchToProps = dispatch => {
 	return {
 		addSymbol:(symbol) => dispatch({type: 'ADD_SYMBOL', symbol: symbol}),
 		removeSymbol:() => dispatch({type: 'REMOVE_SYMBOL'}),
-		check:() => dispatch({type: 'CHECK_PASSCODE'})
+		check:() => dispatch({type: 'CHECK_PASS'})
 	}
 };
 

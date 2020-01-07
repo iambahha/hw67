@@ -3,7 +3,7 @@ const initialState = {
 	isLocked: true
 };
 
-const passcode ='1234';
+const passcode ='3333';
 
 const reducer = (state = initialState, action) => {
 	if (action.type === 'REMOVE_SYMBOL') {
@@ -14,7 +14,7 @@ const reducer = (state = initialState, action) => {
 		};
 	}
 
-	if (action.type === 'CHECK_PASSCODE') {
+	if (action.type === 'CHECK_PASS') {
 		if (passcode === state.code) {
 			return {
 				...state,
